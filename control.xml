@@ -1,0 +1,177 @@
+<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel_1</PanelId>
+    <Type>Statusbar</Type>
+    <Icon>Helpdesk</Icon>
+    <Order>1</Order>
+    <Color>#FF7033</Color>
+    <Name>DevNetZone</Name>
+    <Page>
+      <Name>Monday</Name>
+      <Row>
+        <Name>3:00PM - Workshop 4</Name>
+        <Widget>
+          <WidgetId>widget_1</WidgetId>
+          <Name>Enhancing Meeting Rooms with xAPI &amp; Macros [DEVWKS-2074]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>DEVWKS-2074</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>5:30PM - DevNet Zone</Name>
+        <Widget>
+          <WidgetId>widget_3</WidgetId>
+          <Name>Take Over</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_4</WidgetId>
+          <Name/>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Tuesday</Name>
+      <Row>
+        <Name>3:00PM - StartNow</Name>
+        <Widget>
+          <WidgetId>widget_8</WidgetId>
+          <Name>Mentor Table 2</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_7</WidgetId>
+          <Name/>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>3:00PM - DevNet Zone</Name>
+        <Widget>
+          <WidgetId>widget_6</WidgetId>
+          <Name>Take Over</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_5</WidgetId>
+          <Name/>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Wednesday</Name>
+      <Row>
+        <Name>9:00AM - Classroom 1</Name>
+        <Widget>
+          <WidgetId>widget_9</WidgetId>
+          <Name>Javscript Essentials [DEVNET-1444]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>DEVNET-1444</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>4:00PM - Workshop 4</Name>
+        <Widget>
+          <WidgetId>widget_2</WidgetId>
+          <Name>Enhancing Meeting Rooms with xAPI &amp; Macros [DEVWKS-2074]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>DEVWKS-2074</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Thursday</Name>
+      <Row>
+        <Name>1:00PM - Classroom 1</Name>
+        <Widget>
+          <WidgetId>widget_17</WidgetId>
+          <Name>Webex Teams APIs for Admin &amp; Serviceability [DEVNET-3610]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>DEVNET-3610</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>3:00PM - Classroom 1</Name>
+        <Widget>
+          <WidgetId>widget_16</WidgetId>
+          <Name>Integrated, Automated Meetings Rooms with xAPI [DEVNET-2071]</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>DEVNET-2071</WidgetId>
+          <Name>push</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>3:00PM - DevNet Zone</Name>
+        <Widget>
+          <WidgetId>widget_10</WidgetId>
+          <Name>Take Over</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_11</WidgetId>
+          <Name/>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>5:00PM - Learning Labs</Name>
+        <Widget>
+          <WidgetId>widget_13</WidgetId>
+          <Name>Learning Lab Area</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>widget_12</WidgetId>
+          <Name/>
+          <Type>Text</Type>
+          <Options>size=1;fontSize=normal;align=center</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+  </Panel>
+</Extensions>
