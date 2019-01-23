@@ -15,12 +15,3 @@ In 45 min, you will learn to
 
 ![](docs/ourgoalfortoday.png) 
 
-
-## Quickstart
-
-If you're new to Cisco Collaboration Devices, take this [DevNet learning module](https://learninglabs.cisco.com/modules/xapi-intro).
-
-Then:
-- reserve a [Sandbox Roomkit](https://github.com/CiscoDevNet/awesome-xapi#developer-tools)
-- load and deploy the [provided In-Room control](./control.xml)
-- create and enable the [provided JS macro](./step3-workshop.js)
