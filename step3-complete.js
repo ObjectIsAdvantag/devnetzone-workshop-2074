@@ -1,3 +1,16 @@
+/**
+ * Posts a message to a Webex Teams space via a Bot account
+ * as a button in pressed in a custom in-room control
+ *
+ * Prep work:
+ *      deploy the agenda.xml In-Room control to a CE 9.2+ device
+ *
+ *      from a ssh session, type the commands below:
+ *      > xConfiguration HttpClient Mode: On
+ *      > xConfiguration HttpClient AllowInsecureHTTPS: True
+ *
+ */
+
 const xapi = require('xapi')
 
 xapi.event.on('UserInterface Extensions Event Clicked Signal', (widgetId) => {
@@ -6,21 +19,6 @@ xapi.event.on('UserInterface Extensions Event Clicked Signal', (widgetId) => {
     let markdown = buildMarkdownForSession(widgetId)
     push(markdown)
 })
-
-
-const sessions = {}
-sessions['DEVWKS-2074'] = {
-    id: 'DEVWKS-2074',
-    title: "Enhancement Meeting Rooms User Experience with xAPI and Macros",
-    description: "Join this workshop to go hands-on with xAPI (ie Webex Devices APIs and Cisco Collaboration Endpoint APIs). You'll learn to interact with a Webex Device from code, and implement an end-to-end In-Room Control by creating a custom interface and deploying Macros onto your device",
-    location: "Workshop 4",
-    type: "workshop",
-    day: "Monday",
-    time: "3:00PM",
-    duration: "45",
-    speaker: "Stève Sfartz",
-    href: "https://ciscolive.cisco.com/emea/learn/sessions/content-catalog/?search=2074#/"
-}
 
 
 function buildMarkdownForSession(widgetId) {
@@ -37,13 +35,27 @@ function buildMarkdownForSession(widgetId) {
     return markdown
 }
 
+const sessions = {}
+sessions['DEVWKS-2074'] = {
+    id: 'DEVWKS-2074',
+    title: "Enhancement Meeting Rooms User Experience with xAPI and Macros",
+    description: "Join this workshop to go hands-on with xAPI (ie Webex Devices APIs and Cisco Collaboration Endpoint APIs). You'll learn to interact with a Webex Device from code, and implement an end-to-end In-Room Control by creating a custom interface and deploying Macros onto your device",
+    location: "Workshop 4",
+    type: "workshop",
+    day: "Monday",
+    time: "3:00PM",
+    duration: "45",
+    speaker: "Stève Sfartz",
+    href: "https://ciscolive.cisco.com/emea/learn/sessions/content-catalog/?search=2074#/"
+}
+
 
 function push(msg, cb) {
 
   // Replace with your bot token
-  const token = "YjAyNWE2OWMtNzBkNC00MWJlLTk3ZjYtZDc0NDM4ZTg2ZGI1M2FjMWM5NDctM2Q2_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+  const token = "MzlkMDU2NzktZWY0OC00MjExLTlhNjItZTFjZDMzMjEzZWU5OTRlODZmZDktZGY2_PF84_adfd15eb-84e9-4906-b553-94182dee9ade"
   // replace with a space your bot is part of
-  const roomId = "Y2lzY29zcGFyazovL3VzL1JPT00vOGNmZjY1NzAtMWQ1ZS0xMWU5LWI1M2MtZjllZWNkODAyYTk0"
+  const roomId = "Y2lzY29zcGFyazovL3VzL1JPT00vYzg0NjlkZDAtMWVmNi0xMWU5LWI1MWYtOTUyNzFiZGM2ZTIz"
 
   // Post message
   let payload = {
