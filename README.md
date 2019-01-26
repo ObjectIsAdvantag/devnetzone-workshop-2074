@@ -23,25 +23,35 @@ If you're new to Cisco Collaboration Devices, take this [DevNet learning module]
 Then:
 - reserve a [Sandbox'ed CE9.6 Roomkit](https://github.com/CiscoDevNet/awesome-xapi#developer-tools)
   or use the training pod provided at your event (VPN to devnetsandbox-emea-gwy.cisco.com:20339)
-- load and deploy the [provided In-Room control](./agenda.xml)
+- load and deploy the [provided In-Room control](./step1-agenda.xml)
 - connect via ssh and type
    ```shell
    xstatus UserInterface Extensions
    xfeedback register /Event/UserInterface/Extensions/Event/Clicked
    xfeedback deregisterall
    ```
-- create and enable the [provided JS macro](./step3-complete.js)
+- create and enable the [provided JS macro](./step4-complete.js)
 
 
 ## Step by step instructions
 
 <!-- toc -->
+- [Step 0](#step-0)
+- [Step 1](#step-1)
+  * [Step 1.1](#step-11)
+  * [Step 1.2](#step-12)
+- [Step 2](#step-2)
+- [Step 3](#step-3)
+  * [Step 3.1](#step-31)
+  * [Step 3.2](#step-32)
+- [Step 4](#step-4)
 
 _Tip: check the raw contents, these are ready to paste into a Webex Teams space_
 
-### Step 0.1
+### Step 0
 
-Let's connect to our RoomKit
+Connect to your RoomKit
+
 ```
 Sandbox VPN           : devnetsandbox-emea-gwy.cisco.com:20339
 Sandbox user          : user01 user02 user03 user04
@@ -51,7 +61,17 @@ RoomKit user          : admin
 RoomKit passwd        : ciscopsdt
 ```
 
-### Step 0.2
+
+### Step 1
+
+#### Step 1.1
+
+Open the In-Room Controls Editor.
+
+Create a new Panel with a `push` button with id: 'DEVWKS-2074'
+or simply import the [provided panel sample](./step1-agenda.xml)
+
+#### Step 1.2
 
 From the terminal, open a ssh session to your device (use PUTTY if on windows):
 - ssh 10.10.20.17X
@@ -68,7 +88,7 @@ When done, unregister with command:
 xfeedback deregisterall
 ```
 
-### Step 1
+### Step 2
 
 Once the agenda In-Room control has been created, 
 open the Macro Editor and create a new `listen` macro with the following script:
@@ -86,7 +106,9 @@ console.log('listening...')
 ```
 
 
-### Step 2.1
+### Step 3
+
+#### Step 3.1
 
 We'll now configure your device to allow Http POST/PUT requests
 
@@ -97,8 +119,7 @@ xConfiguration HttpClient Mode: On
 xConfiguration HttpClient AllowInsecureHTTPS: True
 ```
 
-
-### Step 2.2
+#### Step 3.2
 
 Create another macro named `push` with the following script,
 and place your first name on the last line:
@@ -146,7 +167,7 @@ push('Hi, this is Steve! I am performing well so far...', console.log)
 ``` 
 
 
-### Step 3
+### Step 4
 
 Now **disable** the `listen` and `push` macros, 
 and create a new `workshop` macro with the following contents:
