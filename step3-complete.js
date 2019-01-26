@@ -85,3 +85,5 @@ function push(msg, cb) {
       if (cb) cb("Could not post message to Webex Teams")
     })
 }
+
+console.log('listening...')
