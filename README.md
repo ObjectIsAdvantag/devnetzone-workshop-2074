@@ -1,13 +1,13 @@
-# DEVWKS-2074 - Enhancement Meeting Rooms User Experience with xAPI and Macros
+# DEVWKS-2074 - Create custom In-Room Controls and Macros for CE and Webex Devices
 
-This workshop is scheduled at Cisco Live Barcelona 2019 (check the deck for details)
-TODO: Add deck post CL19B
+This workshop is run at Cisco Live events in the DevNet Zone.
+Check the deck from past editions: [Cisco Live Barcelona 2019](docs/cl19b.pdf)
 
 > Join this workshop to go hands-on with xAPI (ie Webex Devices APIs and Cisco Collaboration Endpoint APIs). You'll learn to interact with a Webex Device from code, and implement an end-to-end In-Room Control by creating a custom interface and deploying Macros onto your device
-> [check the sessions details](https://ciscolive.cisco.com/emea/learn/sessions/content-catalog/?search=2074#/)
+> [check the sessions details](https://ciscolive.cisco.com/us/learn/sessions/content-catalog/?search=2074#/)
 
 In 45 min, you will learn to
-- use a Sandbox’ed RoomKit
+- use a sandbox’ed RoomKit
 - build a custom In-Room Control
 - listen to events via ssh
 - create your first Macro
@@ -21,7 +21,7 @@ In 45 min, you will learn to
 If you're new to Cisco Collaboration Devices, take this [DevNet learning module](https://learninglabs.cisco.com/modules/xapi-intro).
 
 Then:
-- reserve a [Sandbox'ed CE9.6 Roomkit](https://github.com/CiscoDevNet/awesome-xapi#developer-tools)
+- reserve a [Sandbox'ed CE9+ Roomkit](https://github.com/CiscoDevNet/awesome-xapi#developer-tools)
   or use the training pod provided at your event (VPN to devnetsandbox-emea-gwy.cisco.com:20339)
 - load and deploy the [provided In-Room control](./step1-agenda.xml)
 - connect via ssh and type
@@ -200,15 +200,15 @@ function buildMarkdownForSession(widgetId) {
 const sessions = {}
 sessions['DEVWKS-2074'] = {
     id: 'DEVWKS-2074',
-    title: "Enhancement Meeting Rooms User Experience with xAPI and Macros",
+    title: "Create custom In-Room Controls and Macros for CE and Webex Devices",
     description: "Join this workshop to go hands-on with xAPI (ie Webex Devices APIs and Cisco Collaboration Endpoint APIs). You'll learn to interact with a Webex Device from code, and implement an end-to-end In-Room Control by creating a custom interface and deploying Macros onto your device",
-    location: "Workshop 4",
+    location: "Workshop 8",
     type: "workshop",
     day: "Monday",
-    time: "3:00PM",
+    time: "4:00PM",
     duration: "45",
     speaker: "Stève Sfartz",
-    href: "https://ciscolive.cisco.com/emea/learn/sessions/content-catalog/?search=2074#/"
+    href: "https://ciscolive.cisco.com/us/learn/sessions/content-catalog/?search=2074#/"
 }
 
 
